@@ -13,6 +13,7 @@ class ReplyAppTest {
     val composeTestRule = createAndroidComposeRule<ComponentActivity>()
 
     @Test
+    @TestCompactWidth
     fun compactDevice_verifyUsingBottomNavigation() {
         // Set up compact window
         composeTestRule.setContent {
